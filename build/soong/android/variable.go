@@ -36,6 +36,9 @@ type Product_variables struct {
 		Cflags []string
 	}
 
+	Uses_qcom_bsp_legacy struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -50,4 +53,5 @@ type ProductVariables struct {
 	BoardUsesLegacyAlsa  *bool `json:",omitempty"`
         Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Uses_media_extensions  *bool `json:",omitempty"`
+	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 }
