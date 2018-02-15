@@ -35,7 +35,6 @@ type Product_variables struct {
 	Uses_media_extensions struct {
 		Cflags []string
 	}
-
 	Uses_qcom_bsp_legacy struct {
 		Cppflags []string
 	}
