@@ -12,7 +12,7 @@ lineage_soong:
 	echo '    "RILPath": "$(call project-path-for,ril)",'; \
 	echo '    "WLANPath": "$(call project-path-for,wlan)"'; \
 	echo '    "Target_shim_libs": "$(subst $(space),:,$(TARGET_LD_SHIM_LIBS))",'; \
-	echo '    "Uses_generic_camera_parameter_library": $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),false,true),'; \
+	echo '    "Uses_generic_camera_parameter_library": $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),false,true)'; \
 	echo '},'; \
 	echo '"Qualcomm": {'; \
 	echo '    "BoardUsesQTIHardware": $(if $(filter true,$(BOARD_USES_QTI_HARDWARE)),true,false),'; \
