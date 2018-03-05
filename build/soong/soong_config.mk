@@ -10,7 +10,7 @@ lineage_soong:
 	echo '    "Uses_media_extensions": $(if $(filter true,$(TARGET_USES_MEDIA_EXTENSIONS)),true,false),'; \
 	echo '    "BTVendorPath": "$(call project-path-for,bt-vendor)",'; \
 	echo '    "RILPath": "$(call project-path-for,ril)",'; \
-	echo '    "WLANPath": "$(call project-path-for,wlan)"'; \
+	echo '    "WLANPath": "$(call project-path-for,wlan)",'; \
 	echo '    "Target_shim_libs": "$(subst $(space),:,$(TARGET_LD_SHIM_LIBS))",'; \
 	echo '    "Uses_generic_camera_parameter_library": $(if $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY),false,true)'; \
 	echo '},'; \
