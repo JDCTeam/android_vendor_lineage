@@ -123,6 +123,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
+    AudioFX \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
