@@ -294,7 +294,7 @@ else
 endif
 
 
-LINEAGE_VERSION := OptimizedCM-15.1-$(shell date -u +%Y%m%d)
+LINEAGE_VERSION := Optimized-LineageOS-15.1-$(shell date -u +%Y%m%d)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
