@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
     Provision \
     Eleven \
     ExactCalculator \
-    Jelly \
     LockClock \
     Trebuchet \
     WallpaperPicker \
