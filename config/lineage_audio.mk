@@ -70,8 +70,6 @@ PRODUCT_COPY_FILES += \
     $(UI_PATH)/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
     $(UI_PATH)/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg \
     $(UI_PATH)/camera_shutter.ogg:system/media/audio/ui/camera_shutter.ogg \
-    $(UI_PATH)/Camera_Timer.ogg:system/media/audio/ui/Camera_Timer.ogg \
-    $(UI_PATH)/Camera_Timer_2sec.ogg:system/media/audio/ui/Camera_Timer_2sec.ogg \
     $(UI_PATH)/Dock.ogg:system/media/audio/ui/Dock.ogg \
     $(UI_PATH)/Effect_Tick.ogg:system/media/audio/ui/Effect_Tick.ogg \
     $(UI_PATH)/KeypressInvalid.ogg:system/media/audio/ui/KeypressInvalid.ogg \
@@ -82,9 +80,8 @@ PRODUCT_COPY_FILES += \
     $(UI_PATH)/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
     $(UI_PATH)/Trusted.ogg:system/media/audio/ui/Trusted.ogg \
     $(UI_PATH)/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-    $(UI_PATH)/USB.ogg:system/media/audio/ui/USB.ogg \
     $(UI_PATH)/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg \
-    $(UI_PATH)/VideoRecordend.ogg:system/media/audio/ui/VideoRecordend.ogg
+    $(UI_PATH)/VideoRecordend.ogg:system/media/audio/ui/VideoStop.ogg
 
 # Ringtones
 ifeq ($(TARGET_NEEDS_BOOSTED_SOUNDS),true)
@@ -103,7 +100,7 @@ PRODUCT_COPY_FILES += \
     $(RINGTONE_PATH)/drum.ogg:system/media/audio/ringtones/drum.ogg \
     $(RINGTONE_PATH)/dynamic.ogg:system/media/audio/ringtones/dynamic.ogg \
     $(RINGTONE_PATH)/echo.ogg:system/media/audio/ringtones/echo.ogg \
-    $(RINGTONE_PATH)/expert.ogg:system/media/audio/ringtones/expert.ogg \
+    $(RINGTONE_PATH)/expect.ogg:system/media/audio/ringtones/expect.ogg \
     $(RINGTONE_PATH)/fluent.ogg:system/media/audio/ringtones/fluent.ogg \
     $(RINGTONE_PATH)/gaiety.ogg:system/media/audio/ringtones/gaiety.ogg \
     $(RINGTONE_PATH)/game.ogg:system/media/audio/ringtones/game.ogg \
@@ -112,7 +109,7 @@ PRODUCT_COPY_FILES += \
     $(RINGTONE_PATH)/marimba.ogg:system/media/audio/ringtones/marimba.ogg \
     $(RINGTONE_PATH)/old_telephone.ogg:system/media/audio/ringtones/old_telephone.ogg \
     $(RINGTONE_PATH)/oneplus_tune.ogg:system/media/audio/ringtones/oneplus_tune.ogg \
-    $(RINGTONE_PATH)/oneplus_tune_rythm.ogg:system/media/audio/ringtones/oneplus_tune_rythm.ogg \
+    $(RINGTONE_PATH)/oneplus_tune_rhythm.ogg:system/media/audio/ringtones/oneplus_tune_rhythm.ogg \
     $(RINGTONE_PATH)/optimistic.ogg:system/media/audio/ringtones/optimistic.ogg \
     $(RINGTONE_PATH)/piano.ogg:system/media/audio/ringtones/piano.ogg \
     $(RINGTONE_PATH)/pyxis.ogg:system/media/audio/ringtones/pyxis.ogg \
