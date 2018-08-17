@@ -160,16 +160,11 @@ PRODUCT_PACKAGES += \
     bash \
     bzip2 \
     curl \
-    gdbserver \
     htop \
     lib7z \
     libsepol \
-    micro_bench \
-    oprofiled \
     pigz \
     powertop \
-    sqlite3 \
-    strace \
     unrar \
     unzip \
     vim \
@@ -219,9 +214,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# These packages are excluded from user builds
 PRODUCT_PACKAGES += \
+    micro_bench \
     procmem \
-    procrank
+    procrank \
+    strace
 
 PRODUCT_PACKAGES += \
     su
