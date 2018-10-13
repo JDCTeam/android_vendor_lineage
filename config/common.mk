@@ -138,10 +138,8 @@ PRODUCT_PACKAGES += \
     Provision \
     Eleven \
     ExactCalculator \
-    Jelly \
     LockClock \
     Trebuchet \
-    Updater \
     WallpaperPicker \
     WeatherProvider
 
