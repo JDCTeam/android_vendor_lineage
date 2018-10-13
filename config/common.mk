@@ -113,10 +113,6 @@ ifeq ($(WITH_TWRP),true)
 include vendor/lineage/config/twrp.mk
 endif
 
-# Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
-
 # Required Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
