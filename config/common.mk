@@ -230,13 +230,10 @@ PRODUCT_PACKAGES_DEBUG += \
     procrank \
     strace
 
-# Conditionally build in su
-ifneq ($(TARGET_BUILD_VARIANT),user)
-ifeq ($(WITH_SU),true)
+# Build in su
 PRODUCT_PACKAGES += \
     su
-endif
-endif
+
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
