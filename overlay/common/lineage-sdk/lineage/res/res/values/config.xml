@@ -23,4 +23,10 @@
         <item>com.antutu.ABenchMark.*,2</item>
         <item>.*com.antutu.benchmark.*,2</item>
     </string-array>
+
+    <bool name="config_defaultAutoOutdoorMode">false</bool>
+    <bool name="config_defaultColorEnhancement">false</bool>
+    <bool name="config_defaultCABC">false</bool>
+
+    
 </resources>
