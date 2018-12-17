@@ -35,7 +35,6 @@ def main(argv):
             xmltree = parseString(line)
             carrier = xmltree.getElementsByTagName('apn')[0].getAttribute('carrier')
             custom_apn_names.append(carrier)
-    f.close()
 
     with open(original_file, 'r') as input_file:
         with open(output_file_path, 'w') as output_file:
