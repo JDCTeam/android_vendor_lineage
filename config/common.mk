@@ -159,7 +159,8 @@ PRODUCT_PACKAGES += \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent
+    LineageYellowAccent \
+    OneplusBlueAccent
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
