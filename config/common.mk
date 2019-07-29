@@ -123,15 +123,7 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
-    LineageParts \
-    Development \
-    Profiles
-
-# Optional packages
-PRODUCT_PACKAGES += \
-    LiveWallpapersPicker \
-    PhotoTable \
-    Terminal
+    LineageParts
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
@@ -140,10 +132,8 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     Provision \
     Eleven \
-    ExactCalculator \
     LockClock \
-    WallpaperPicker \
-    WeatherProvider
+    WallpaperPicker
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -153,16 +143,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageBlackTheme \
     LineageDarkTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
     LineageGreenAccent \
     LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent \
     OneplusBlueAccent
 
 # Extra tools in Lineage
@@ -241,7 +224,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-LINEAGE_VERSION := Optimized-LineageOS-16.0-$(shell date -u +%Y%m%d)-Version$(OPTIMIZED_LINEAGEOS_VERSION)
+LINEAGE_VERSION := Optimized-LineageOS-16.0-Version$(OPTIMIZED_LINEAGEOS_VERSION)-Go
 LINEAGE_DISPLAY_VERSION := $(LINEAGE_VERSION)
 TARGET_VENDOR_RELEASE_BUILD_ID := $(LINEAGE_VERSION)
 
