@@ -26,14 +26,14 @@ percent_display: c c 22 124 128 255 charger/font_log
 fail: charger/battery_fail
 
 # frame: disp_time min_level max_level
-frame: 750 0 100
-frame: 750 10 100
-frame: 750 20 100
-frame: 750 30 100
-frame: 750 40 100
-frame: 750 50 100
-frame: 750 60 100
-frame: 750 70 100
-frame: 750 80 100
-frame: 750 90 100
-frame: 750 100 100
+frame: 1000 0 100
+frame: 1000 10 100
+frame: 1000 20 100
+frame: 1000 30 100
+frame: 1000 40 100
+frame: 1000 50 100
+frame: 1000 60 100
+frame: 1000 70 100
+frame: 1000 80 100
+frame: 1000 90 100
+frame: 1000 100 100
