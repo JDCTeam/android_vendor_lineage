@@ -227,15 +227,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES_DEBUG += \
     procmem
 
-# Conditionally build in su
-ifneq ($(TARGET_BUILD_VARIANT),user)
+# su
 PRODUCT_PACKAGES += \
     adb_root
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
     su
-endif
-endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
