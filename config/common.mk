@@ -227,7 +227,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # su
 PRODUCT_PACKAGES += \
-    adb_root
+    adb_root \
     su
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
