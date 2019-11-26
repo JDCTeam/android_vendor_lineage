@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     Backgrounds \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
+    Provision \
     Eleven \
     LockClock \
     Profiles \
