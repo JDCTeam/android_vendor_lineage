@@ -233,6 +233,7 @@ LINEAGE_VERSION := Optimized-LineageOS-17.0-$(shell date -u +%Y%m%d)-Version$(OP
 LINEAGE_DISPLAY_VERSION := $(LINEAGE_VERSION)
 TARGET_VENDOR_RELEASE_BUILD_ID := $(LINEAGE_VERSION)
 
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
