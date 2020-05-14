@@ -21,8 +21,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
 
-# Disable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -75,11 +73,26 @@ PRODUCT_COPY_FILES += \
 
 # This is Lineage!
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml
+    vendor/lineage/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml \
+    vendor/lineage/config/permissions/privapp-permissions-lineage-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml \
+    vendor/lineage/config/permissions/privapp-permissions-lineage-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineage.xml \
+    vendor/lineage/config/permissions/privapp-permissions-cm-legacy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-cm-legacy.xml
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
+
+# Hidden API whitelist
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
+
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/lineage-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-power-whitelist.xml
+
+# Pre-granted permissions
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/lineage-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/lineage-default-permissions.xml
 
 # Include AOSP audio files
 include vendor/lineage/config/aosp_audio.mk
@@ -110,10 +123,15 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # AOSP packages
 PRODUCT_PACKAGES += \
+    Email \
+    ExactCalculator \
+    Exchange2 \
     Terminal
 
 # Lineage packages
 PRODUCT_PACKAGES += \
+    AudioFX \
+    Backgrounds \
     LineageParts \
     LineageSettingsProvider \
     Provision \
@@ -201,6 +219,10 @@ PRODUCT_PACKAGES += \
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
+
+# Media
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.recorder.show_manufacturer_and_model=true
 
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \

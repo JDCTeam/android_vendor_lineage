@@ -1,4 +1,14 @@
-# This config is for legacy purposes, there are no atv product size variants
+# Exclude AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
 
-# Inherit common atv Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_tv.mk)
+# Inherit full common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full.mk)
+
+# Inherit Lineage atv device tree
+$(call inherit-product, device/lineage/atv/lineage_atv.mk)
+
+PRODUCT_PACKAGES += \
+    AppDrawer \
+    LineageCustomizer
+
+DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
