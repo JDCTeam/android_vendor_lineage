@@ -169,14 +169,9 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Root
 PRODUCT_PACKAGES += \
-    adb_root
-ifneq ($(TARGET_BUILD_VARIANT),user)
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
+    adb_root \
     su
-endif
-endif
-
+ 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
